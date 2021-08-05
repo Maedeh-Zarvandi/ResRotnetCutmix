@@ -38,7 +38,7 @@ This code is released under the MIT License (refer to the LICENSE file for detai
 * In order to train (in an unsupervised way) the RotNet model on the CIFAR-10 training images and then evaluate object classifiers on top of the RotNet-based learned features see the [run_cifar10_based_unsupervised_experiments.sh] script. Pre-trained model (in pytorch format) is provided.
 * In order to run the semi-supervised experiments on CIFAR-10 see the [run_cifar10_semi_supervised_experiments.sh]script.
 
-###In order to:
+### In order to:
 * just apply rotations you need to use dataloader.py file and algorithm folder.
 * first apply rotations then cutmix you need to use dataloader-rc.py file and algorithm-rc folder.
 * first apply cutmix then rotations you need to use dataloader-cr.py file and algorithm-cr folder.
