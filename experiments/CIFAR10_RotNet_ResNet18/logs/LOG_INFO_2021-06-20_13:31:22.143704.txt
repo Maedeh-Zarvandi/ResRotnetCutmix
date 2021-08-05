@@ -1,0 +1,455 @@
+2021-06-20 13:31:22,144 - algorithms.Algorithm - INFO   - Algorithm options {'data_train_opt': {'batch_size': 128, 'unsupervised': True, 'epoch_size': None, 'random_sized_crop': False, 'dataset_name': 'cifar10', 'split': 'train'}, 'data_test_opt': {'batch_size': 128, 'unsupervised': True, 'epoch_size': None, 'random_sized_crop': False, 'dataset_name': 'cifar10', 'split': 'test'}, 'max_num_epochs': 30, 'networks': {'model': {'def_file': 'architectures/ResNet.py', 'pretrained': None, 'opt': {'num_classes': 4, 'num_blocks': [2, 2, 2, 2]}, 'optim_params': {'optim_type': 'sgd', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0.0005, 'nesterov': True, 'LUT_lr': [(60, 0.1), (120, 0.02), (160, 0.004), (200, 0.0008)]}}}, 'criterions': {'loss': {'ctype': 'CrossEntropyLoss', 'opt': None}}, 'algorithm_type': 'ClassificationModel', 'exp_dir': './experiments/CIFAR10_RotNet_ResNet18', 'disp_step': 50}
+2021-06-20 13:31:22,145 - algorithms.Algorithm - INFO   - Set network model
+2021-06-20 13:31:22,145 - algorithms.Algorithm - INFO   - ==> Initiliaze network model from file architectures/ResNet.py with opts: {'num_classes': 4, 'num_blocks': [2, 2, 2, 2]}
+2021-06-20 13:31:22,312 - algorithms.Algorithm - INFO   - Initialize criterion[loss]: CrossEntropyLoss with options: None
+2021-06-20 13:31:26,614 - algorithms.Algorithm - INFO   - Initialize optimizer: sgd with params: {'optim_type': 'sgd', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0.0005, 'nesterov': True, 'LUT_lr': [(60, 0.1), (120, 0.02), (160, 0.004), (200, 0.0008)]} for netwotk: model
+2021-06-20 13:31:26,616 - algorithms.Algorithm - INFO   - Training epoch [  1 /  30]
+2021-06-20 13:31:26,616 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:31:26,616 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:31:42,661 - algorithms.Algorithm - INFO   - ==> Iteration [  1][  50 /  391]: {'prec1': 27.7656, 'loss': 2.1029, 'load_time': 69.1463, 'process_time': 30.8537}
+2021-06-20 13:31:58,065 - algorithms.Algorithm - INFO   - ==> Iteration [  1][ 100 /  391]: {'prec1': 32.916, 'loss': 1.6895, 'load_time': 70.1791, 'process_time': 29.8209}
+2021-06-20 13:32:13,517 - algorithms.Algorithm - INFO   - ==> Iteration [  1][ 150 /  391]: {'prec1': 37.2695, 'loss': 1.5153, 'load_time': 70.3012, 'process_time': 29.6988}
+2021-06-20 13:32:28,987 - algorithms.Algorithm - INFO   - ==> Iteration [  1][ 200 /  391]: {'prec1': 39.9756, 'loss': 1.4209, 'load_time': 70.31, 'process_time': 29.69}
+2021-06-20 13:32:44,474 - algorithms.Algorithm - INFO   - ==> Iteration [  1][ 250 /  391]: {'prec1': 42.1039, 'loss': 1.3558, 'load_time': 70.2444, 'process_time': 29.7556}
+2021-06-20 13:32:59,964 - algorithms.Algorithm - INFO   - ==> Iteration [  1][ 300 /  391]: {'prec1': 43.5247, 'loss': 1.3127, 'load_time': 70.251, 'process_time': 29.749}
+2021-06-20 13:33:15,488 - algorithms.Algorithm - INFO   - ==> Iteration [  1][ 350 /  391]: {'prec1': 44.8432, 'loss': 1.2787, 'load_time': 70.2353, 'process_time': 29.7647}
+2021-06-20 13:33:28,353 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 45.6861, 'loss': 1.2579, 'load_time': 70.2028, 'process_time': 29.7972}
+2021-06-20 13:33:28,687 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 13:33:28,688 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 13:33:34,906 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 50.5241, 'loss': 1.1388, 'load_time': 9.2492, 'process_time': 90.7508}
+2021-06-20 13:33:34,907 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 50.5241, 'loss': 1.1388, 'load_time': 9.2492, 'process_time': 90.7508}
+2021-06-20 13:33:34,908 - algorithms.Algorithm - INFO   - Training epoch [  2 /  30]
+2021-06-20 13:33:34,908 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:33:34,908 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:33:50,801 - algorithms.Algorithm - INFO   - ==> Iteration [  2][  50 /  391]: {'prec1': 54.3047, 'loss': 1.0598, 'load_time': 68.5503, 'process_time': 31.4497}
+2021-06-20 13:34:06,302 - algorithms.Algorithm - INFO   - ==> Iteration [  2][ 100 /  391]: {'prec1': 54.3359, 'loss': 1.0516, 'load_time': 69.7805, 'process_time': 30.2195}
+2021-06-20 13:34:21,805 - algorithms.Algorithm - INFO   - ==> Iteration [  2][ 150 /  391]: {'prec1': 54.1862, 'loss': 1.0511, 'load_time': 70.0277, 'process_time': 29.9723}
+2021-06-20 13:34:37,326 - algorithms.Algorithm - INFO   - ==> Iteration [  2][ 200 /  391]: {'prec1': 54.4922, 'loss': 1.0458, 'load_time': 70.2459, 'process_time': 29.7541}
+2021-06-20 13:34:52,856 - algorithms.Algorithm - INFO   - ==> Iteration [  2][ 250 /  391]: {'prec1': 54.8047, 'loss': 1.0394, 'load_time': 70.3759, 'process_time': 29.6241}
+2021-06-20 13:35:08,402 - algorithms.Algorithm - INFO   - ==> Iteration [  2][ 300 /  391]: {'prec1': 55.1862, 'loss': 1.0328, 'load_time': 70.3701, 'process_time': 29.6299}
+2021-06-20 13:35:23,927 - algorithms.Algorithm - INFO   - ==> Iteration [  2][ 350 /  391]: {'prec1': 55.4587, 'loss': 1.0282, 'load_time': 70.4299, 'process_time': 29.5701}
+2021-06-20 13:35:36,684 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 55.7681, 'loss': 1.0232, 'load_time': 70.6016, 'process_time': 29.3984}
+2021-06-20 13:35:37,134 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 13:35:37,136 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 13:35:42,907 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 58.166, 'loss': 0.9929, 'load_time': 6.3616, 'process_time': 93.6384}
+2021-06-20 13:35:42,908 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 58.166, 'loss': 0.9929, 'load_time': 6.3616, 'process_time': 93.6384}
+2021-06-20 13:35:42,908 - algorithms.Algorithm - INFO   - Training epoch [  3 /  30]
+2021-06-20 13:35:42,908 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:35:42,908 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:35:58,621 - algorithms.Algorithm - INFO   - ==> Iteration [  3][  50 /  391]: {'prec1': 58.9492, 'loss': 0.9703, 'load_time': 69.868, 'process_time': 30.132}
+2021-06-20 13:36:14,146 - algorithms.Algorithm - INFO   - ==> Iteration [  3][ 100 /  391]: {'prec1': 59.6543, 'loss': 0.9554, 'load_time': 70.5966, 'process_time': 29.4034}
+2021-06-20 13:36:29,643 - algorithms.Algorithm - INFO   - ==> Iteration [  3][ 150 /  391]: {'prec1': 59.7617, 'loss': 0.9525, 'load_time': 71.1442, 'process_time': 28.8558}
+2021-06-20 13:36:45,150 - algorithms.Algorithm - INFO   - ==> Iteration [  3][ 200 /  391]: {'prec1': 60.1318, 'loss': 0.9454, 'load_time': 71.2253, 'process_time': 28.7747}
+2021-06-20 13:37:00,659 - algorithms.Algorithm - INFO   - ==> Iteration [  3][ 250 /  391]: {'prec1': 60.4656, 'loss': 0.94, 'load_time': 71.2983, 'process_time': 28.7017}
+2021-06-20 13:37:16,137 - algorithms.Algorithm - INFO   - ==> Iteration [  3][ 300 /  391]: {'prec1': 60.8678, 'loss': 0.9295, 'load_time': 71.4547, 'process_time': 28.5453}
+2021-06-20 13:37:31,652 - algorithms.Algorithm - INFO   - ==> Iteration [  3][ 350 /  391]: {'prec1': 61.1044, 'loss': 0.9235, 'load_time': 71.4755, 'process_time': 28.5245}
+2021-06-20 13:37:44,443 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 61.3516, 'loss': 0.918, 'load_time': 71.442, 'process_time': 28.558}
+2021-06-20 13:37:44,900 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 13:37:44,901 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 13:37:50,902 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 63.6002, 'loss': 0.8695, 'load_time': 8.579, 'process_time': 91.421}
+2021-06-20 13:37:50,903 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 63.6002, 'loss': 0.8695, 'load_time': 8.579, 'process_time': 91.421}
+2021-06-20 13:37:50,903 - algorithms.Algorithm - INFO   - Training epoch [  4 /  30]
+2021-06-20 13:37:50,903 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:37:50,904 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:38:06,644 - algorithms.Algorithm - INFO   - ==> Iteration [  4][  50 /  391]: {'prec1': 65.1523, 'loss': 0.8454, 'load_time': 69.4219, 'process_time': 30.5781}
+2021-06-20 13:38:22,183 - algorithms.Algorithm - INFO   - ==> Iteration [  4][ 100 /  391]: {'prec1': 65.6992, 'loss': 0.8332, 'load_time': 69.9826, 'process_time': 30.0174}
+2021-06-20 13:38:37,744 - algorithms.Algorithm - INFO   - ==> Iteration [  4][ 150 /  391]: {'prec1': 66.2747, 'loss': 0.821, 'load_time': 70.2802, 'process_time': 29.7198}
+2021-06-20 13:38:53,266 - algorithms.Algorithm - INFO   - ==> Iteration [  4][ 200 /  391]: {'prec1': 66.8623, 'loss': 0.8103, 'load_time': 70.6236, 'process_time': 29.3764}
+2021-06-20 13:39:08,792 - algorithms.Algorithm - INFO   - ==> Iteration [  4][ 250 /  391]: {'prec1': 67.3609, 'loss': 0.7998, 'load_time': 70.8101, 'process_time': 29.1899}
+2021-06-20 13:39:24,314 - algorithms.Algorithm - INFO   - ==> Iteration [  4][ 300 /  391]: {'prec1': 67.7389, 'loss': 0.7917, 'load_time': 70.8959, 'process_time': 29.1041}
+2021-06-20 13:39:39,812 - algorithms.Algorithm - INFO   - ==> Iteration [  4][ 350 /  391]: {'prec1': 68.043, 'loss': 0.7857, 'load_time': 71.0437, 'process_time': 28.9563}
+2021-06-20 13:39:52,600 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 68.2449, 'loss': 0.781, 'load_time': 71.1724, 'process_time': 28.8276}
+2021-06-20 13:39:52,974 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 13:39:52,976 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 13:39:58,850 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 70.2284, 'loss': 0.73, 'load_time': 6.6848, 'process_time': 93.3152}
+2021-06-20 13:39:58,851 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 70.2284, 'loss': 0.73, 'load_time': 6.6848, 'process_time': 93.3152}
+2021-06-20 13:39:58,851 - algorithms.Algorithm - INFO   - Training epoch [  5 /  30]
+2021-06-20 13:39:58,851 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:39:58,851 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:40:14,580 - algorithms.Algorithm - INFO   - ==> Iteration [  5][  50 /  391]: {'prec1': 71.5312, 'loss': 0.7178, 'load_time': 70.2894, 'process_time': 29.7106}
+2021-06-20 13:40:30,090 - algorithms.Algorithm - INFO   - ==> Iteration [  5][ 100 /  391]: {'prec1': 71.8984, 'loss': 0.7056, 'load_time': 70.9742, 'process_time': 29.0258}
+2021-06-20 13:40:45,606 - algorithms.Algorithm - INFO   - ==> Iteration [  5][ 150 /  391]: {'prec1': 72.3268, 'loss': 0.6965, 'load_time': 71.2355, 'process_time': 28.7645}
+2021-06-20 13:41:01,102 - algorithms.Algorithm - INFO   - ==> Iteration [  5][ 200 /  391]: {'prec1': 72.7627, 'loss': 0.6866, 'load_time': 71.3652, 'process_time': 28.6348}
+2021-06-20 13:41:16,598 - algorithms.Algorithm - INFO   - ==> Iteration [  5][ 250 /  391]: {'prec1': 73.1047, 'loss': 0.6783, 'load_time': 71.4769, 'process_time': 28.5231}
+2021-06-20 13:41:32,128 - algorithms.Algorithm - INFO   - ==> Iteration [  5][ 300 /  391]: {'prec1': 73.2799, 'loss': 0.6729, 'load_time': 71.3796, 'process_time': 28.6204}
+2021-06-20 13:41:47,653 - algorithms.Algorithm - INFO   - ==> Iteration [  5][ 350 /  391]: {'prec1': 73.514, 'loss': 0.667, 'load_time': 71.3434, 'process_time': 28.6566}
+2021-06-20 13:42:00,475 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 73.7246, 'loss': 0.6625, 'load_time': 71.2553, 'process_time': 28.7447}
+2021-06-20 13:42:00,937 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 13:42:00,938 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 13:42:07,120 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 74.4932, 'loss': 0.6459, 'load_time': 9.3974, 'process_time': 90.6026}
+2021-06-20 13:42:07,121 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 74.4932, 'loss': 0.6459, 'load_time': 9.3974, 'process_time': 90.6026}
+2021-06-20 13:42:07,122 - algorithms.Algorithm - INFO   - Training epoch [  6 /  30]
+2021-06-20 13:42:07,122 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:42:07,122 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:42:22,875 - algorithms.Algorithm - INFO   - ==> Iteration [  6][  50 /  391]: {'prec1': 76.6055, 'loss': 0.599, 'load_time': 70.1961, 'process_time': 29.8039}
+2021-06-20 13:42:38,392 - algorithms.Algorithm - INFO   - ==> Iteration [  6][ 100 /  391]: {'prec1': 76.375, 'loss': 0.6019, 'load_time': 70.5586, 'process_time': 29.4414}
+2021-06-20 13:42:53,947 - algorithms.Algorithm - INFO   - ==> Iteration [  6][ 150 /  391]: {'prec1': 76.8203, 'loss': 0.592, 'load_time': 70.5575, 'process_time': 29.4425}
+2021-06-20 13:43:09,485 - algorithms.Algorithm - INFO   - ==> Iteration [  6][ 200 /  391]: {'prec1': 76.7559, 'loss': 0.5932, 'load_time': 70.5519, 'process_time': 29.4481}
+2021-06-20 13:43:25,015 - algorithms.Algorithm - INFO   - ==> Iteration [  6][ 250 /  391]: {'prec1': 77.0227, 'loss': 0.5876, 'load_time': 70.535, 'process_time': 29.465}
+2021-06-20 13:43:40,542 - algorithms.Algorithm - INFO   - ==> Iteration [  6][ 300 /  391]: {'prec1': 77.2148, 'loss': 0.5828, 'load_time': 70.5938, 'process_time': 29.4062}
+2021-06-20 13:43:56,051 - algorithms.Algorithm - INFO   - ==> Iteration [  6][ 350 /  391]: {'prec1': 77.4727, 'loss': 0.5772, 'load_time': 70.7155, 'process_time': 29.2845}
+2021-06-20 13:44:08,882 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 77.6412, 'loss': 0.5732, 'load_time': 70.7386, 'process_time': 29.2614}
+2021-06-20 13:44:09,204 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 13:44:09,205 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 13:44:15,088 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 77.5811, 'loss': 0.5997, 'load_time': 7.4661, 'process_time': 92.5339}
+2021-06-20 13:44:15,089 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 77.5811, 'loss': 0.5997, 'load_time': 7.4661, 'process_time': 92.5339}
+2021-06-20 13:44:15,089 - algorithms.Algorithm - INFO   - Training epoch [  7 /  30]
+2021-06-20 13:44:15,089 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:44:15,089 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:44:30,888 - algorithms.Algorithm - INFO   - ==> Iteration [  7][  50 /  391]: {'prec1': 79.5391, 'loss': 0.5271, 'load_time': 70.1751, 'process_time': 29.8249}
+2021-06-20 13:44:46,429 - algorithms.Algorithm - INFO   - ==> Iteration [  7][ 100 /  391]: {'prec1': 80.082, 'loss': 0.5165, 'load_time': 70.5134, 'process_time': 29.4866}
+2021-06-20 13:45:01,972 - algorithms.Algorithm - INFO   - ==> Iteration [  7][ 150 /  391]: {'prec1': 80.0169, 'loss': 0.5179, 'load_time': 70.583, 'process_time': 29.417}
+2021-06-20 13:45:17,527 - algorithms.Algorithm - INFO   - ==> Iteration [  7][ 200 /  391]: {'prec1': 79.9043, 'loss': 0.5191, 'load_time': 70.7155, 'process_time': 29.2845}
+2021-06-20 13:45:33,077 - algorithms.Algorithm - INFO   - ==> Iteration [  7][ 250 /  391]: {'prec1': 80.0719, 'loss': 0.5156, 'load_time': 70.7748, 'process_time': 29.2252}
+2021-06-20 13:45:48,591 - algorithms.Algorithm - INFO   - ==> Iteration [  7][ 300 /  391]: {'prec1': 80.1491, 'loss': 0.5142, 'load_time': 70.9607, 'process_time': 29.0393}
+2021-06-20 13:46:04,095 - algorithms.Algorithm - INFO   - ==> Iteration [  7][ 350 /  391]: {'prec1': 80.3181, 'loss': 0.5098, 'load_time': 71.1603, 'process_time': 28.8397}
+2021-06-20 13:46:16,888 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 80.402, 'loss': 0.5083, 'load_time': 71.2405, 'process_time': 28.7595}
+2021-06-20 13:46:17,281 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 13:46:17,282 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 13:46:23,334 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 79.3488, 'loss': 0.5308, 'load_time': 8.4192, 'process_time': 91.5808}
+2021-06-20 13:46:23,335 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 79.3488, 'loss': 0.5308, 'load_time': 8.4192, 'process_time': 91.5808}
+2021-06-20 13:46:23,335 - algorithms.Algorithm - INFO   - Training epoch [  8 /  30]
+2021-06-20 13:46:23,335 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:46:23,335 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:46:39,174 - algorithms.Algorithm - INFO   - ==> Iteration [  8][  50 /  391]: {'prec1': 83.2109, 'loss': 0.4442, 'load_time': 70.3289, 'process_time': 29.6711}
+2021-06-20 13:46:54,713 - algorithms.Algorithm - INFO   - ==> Iteration [  8][ 100 /  391]: {'prec1': 82.5215, 'loss': 0.4584, 'load_time': 71.1825, 'process_time': 28.8175}
+2021-06-20 13:47:10,252 - algorithms.Algorithm - INFO   - ==> Iteration [  8][ 150 /  391]: {'prec1': 82.5755, 'loss': 0.4582, 'load_time': 71.2943, 'process_time': 28.7057}
+2021-06-20 13:47:25,796 - algorithms.Algorithm - INFO   - ==> Iteration [  8][ 200 /  391]: {'prec1': 82.4512, 'loss': 0.4597, 'load_time': 71.3581, 'process_time': 28.6419}
+2021-06-20 13:47:41,328 - algorithms.Algorithm - INFO   - ==> Iteration [  8][ 250 /  391]: {'prec1': 82.5344, 'loss': 0.4573, 'load_time': 71.3997, 'process_time': 28.6003}
+2021-06-20 13:47:56,875 - algorithms.Algorithm - INFO   - ==> Iteration [  8][ 300 /  391]: {'prec1': 82.6126, 'loss': 0.4557, 'load_time': 71.4524, 'process_time': 28.5476}
+2021-06-20 13:48:12,412 - algorithms.Algorithm - INFO   - ==> Iteration [  8][ 350 /  391]: {'prec1': 82.7238, 'loss': 0.4532, 'load_time': 71.4603, 'process_time': 28.5397}
+2021-06-20 13:48:25,191 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 82.7982, 'loss': 0.4515, 'load_time': 71.5226, 'process_time': 28.4774}
+2021-06-20 13:48:25,572 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 13:48:25,573 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 13:48:31,511 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 79.3612, 'loss': 0.5754, 'load_time': 7.9913, 'process_time': 92.0087}
+2021-06-20 13:48:31,512 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 79.3612, 'loss': 0.5754, 'load_time': 7.9913, 'process_time': 92.0087}
+2021-06-20 13:48:31,512 - algorithms.Algorithm - INFO   - Training epoch [  9 /  30]
+2021-06-20 13:48:31,512 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:48:31,513 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:48:47,362 - algorithms.Algorithm - INFO   - ==> Iteration [  9][  50 /  391]: {'prec1': 84.2656, 'loss': 0.4124, 'load_time': 68.6963, 'process_time': 31.3037}
+2021-06-20 13:49:02,865 - algorithms.Algorithm - INFO   - ==> Iteration [  9][ 100 /  391]: {'prec1': 84.1934, 'loss': 0.4151, 'load_time': 69.7613, 'process_time': 30.2387}
+2021-06-20 13:49:18,389 - algorithms.Algorithm - INFO   - ==> Iteration [  9][ 150 /  391]: {'prec1': 84.2695, 'loss': 0.4141, 'load_time': 70.1014, 'process_time': 29.8986}
+2021-06-20 13:49:33,896 - algorithms.Algorithm - INFO   - ==> Iteration [  9][ 200 /  391]: {'prec1': 84.4746, 'loss': 0.4107, 'load_time': 70.4406, 'process_time': 29.5594}
+2021-06-20 13:49:49,392 - algorithms.Algorithm - INFO   - ==> Iteration [  9][ 250 /  391]: {'prec1': 84.5078, 'loss': 0.411, 'load_time': 70.756, 'process_time': 29.244}
+2021-06-20 13:50:04,944 - algorithms.Algorithm - INFO   - ==> Iteration [  9][ 300 /  391]: {'prec1': 84.5391, 'loss': 0.4098, 'load_time': 70.6354, 'process_time': 29.3646}
+2021-06-20 13:50:20,476 - algorithms.Algorithm - INFO   - ==> Iteration [  9][ 350 /  391]: {'prec1': 84.6323, 'loss': 0.408, 'load_time': 70.6604, 'process_time': 29.3396}
+2021-06-20 13:50:33,223 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 84.686, 'loss': 0.4062, 'load_time': 70.76, 'process_time': 29.24}
+2021-06-20 13:50:33,660 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 13:50:33,661 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 13:50:39,498 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 83.5641, 'loss': 0.4325, 'load_time': 6.6704, 'process_time': 93.3296}
+2021-06-20 13:50:39,498 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 83.5641, 'loss': 0.4325, 'load_time': 6.6704, 'process_time': 93.3296}
+2021-06-20 13:50:39,499 - algorithms.Algorithm - INFO   - Training epoch [ 10 /  30]
+2021-06-20 13:50:39,499 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:50:39,499 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:50:55,166 - algorithms.Algorithm - INFO   - ==> Iteration [ 10][  50 /  391]: {'prec1': 85.8164, 'loss': 0.373, 'load_time': 70.1812, 'process_time': 29.8188}
+2021-06-20 13:51:10,653 - algorithms.Algorithm - INFO   - ==> Iteration [ 10][ 100 /  391]: {'prec1': 85.5195, 'loss': 0.3829, 'load_time': 71.1905, 'process_time': 28.8095}
+2021-06-20 13:51:26,141 - algorithms.Algorithm - INFO   - ==> Iteration [ 10][ 150 /  391]: {'prec1': 85.6745, 'loss': 0.3806, 'load_time': 71.3286, 'process_time': 28.6714}
+2021-06-20 13:51:41,643 - algorithms.Algorithm - INFO   - ==> Iteration [ 10][ 200 /  391]: {'prec1': 85.7549, 'loss': 0.3795, 'load_time': 71.4582, 'process_time': 28.5418}
+2021-06-20 13:51:57,138 - algorithms.Algorithm - INFO   - ==> Iteration [ 10][ 250 /  391]: {'prec1': 85.7469, 'loss': 0.3795, 'load_time': 71.5035, 'process_time': 28.4965}
+2021-06-20 13:52:12,634 - algorithms.Algorithm - INFO   - ==> Iteration [ 10][ 300 /  391]: {'prec1': 85.8158, 'loss': 0.3771, 'load_time': 71.4858, 'process_time': 28.5142}
+2021-06-20 13:52:28,128 - algorithms.Algorithm - INFO   - ==> Iteration [ 10][ 350 /  391]: {'prec1': 85.8962, 'loss': 0.3752, 'load_time': 71.5104, 'process_time': 28.4896}
+2021-06-20 13:52:41,043 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 85.9049, 'loss': 0.3749, 'load_time': 71.557, 'process_time': 28.443}
+2021-06-20 13:52:41,373 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 13:52:41,375 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 13:52:47,347 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 83.9547, 'loss': 0.4247, 'load_time': 8.3859, 'process_time': 91.6141}
+2021-06-20 13:52:47,347 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 83.9547, 'loss': 0.4247, 'load_time': 8.3859, 'process_time': 91.6141}
+2021-06-20 13:52:47,348 - algorithms.Algorithm - INFO   - Training epoch [ 11 /  30]
+2021-06-20 13:52:47,348 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:52:47,348 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:53:03,119 - algorithms.Algorithm - INFO   - ==> Iteration [ 11][  50 /  391]: {'prec1': 86.6133, 'loss': 0.3562, 'load_time': 70.0873, 'process_time': 29.9127}
+2021-06-20 13:53:18,637 - algorithms.Algorithm - INFO   - ==> Iteration [ 11][ 100 /  391]: {'prec1': 86.7891, 'loss': 0.3504, 'load_time': 70.6311, 'process_time': 29.3689}
+2021-06-20 13:53:34,129 - algorithms.Algorithm - INFO   - ==> Iteration [ 11][ 150 /  391]: {'prec1': 86.7839, 'loss': 0.3514, 'load_time': 71.1203, 'process_time': 28.8797}
+2021-06-20 13:53:49,652 - algorithms.Algorithm - INFO   - ==> Iteration [ 11][ 200 /  391]: {'prec1': 86.75, 'loss': 0.3529, 'load_time': 70.9941, 'process_time': 29.0059}
+2021-06-20 13:54:05,180 - algorithms.Algorithm - INFO   - ==> Iteration [ 11][ 250 /  391]: {'prec1': 86.7844, 'loss': 0.3522, 'load_time': 70.9757, 'process_time': 29.0243}
+2021-06-20 13:54:20,708 - algorithms.Algorithm - INFO   - ==> Iteration [ 11][ 300 /  391]: {'prec1': 86.8932, 'loss': 0.3509, 'load_time': 70.9617, 'process_time': 29.0383}
+2021-06-20 13:54:36,256 - algorithms.Algorithm - INFO   - ==> Iteration [ 11][ 350 /  391]: {'prec1': 86.8186, 'loss': 0.3519, 'load_time': 70.9173, 'process_time': 29.0827}
+2021-06-20 13:54:49,058 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 86.845, 'loss': 0.3509, 'load_time': 70.9689, 'process_time': 29.0311}
+2021-06-20 13:54:49,437 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 13:54:49,438 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 13:54:55,353 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 82.8768, 'loss': 0.4442, 'load_time': 7.6077, 'process_time': 92.3923}
+2021-06-20 13:54:55,355 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 82.8768, 'loss': 0.4442, 'load_time': 7.6077, 'process_time': 92.3923}
+2021-06-20 13:54:55,355 - algorithms.Algorithm - INFO   - Training epoch [ 12 /  30]
+2021-06-20 13:54:55,355 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:54:55,355 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:55:11,191 - algorithms.Algorithm - INFO   - ==> Iteration [ 12][  50 /  391]: {'prec1': 87.7812, 'loss': 0.3281, 'load_time': 69.3075, 'process_time': 30.6925}
+2021-06-20 13:55:26,704 - algorithms.Algorithm - INFO   - ==> Iteration [ 12][ 100 /  391]: {'prec1': 87.4219, 'loss': 0.3358, 'load_time': 70.3065, 'process_time': 29.6935}
+2021-06-20 13:55:42,221 - algorithms.Algorithm - INFO   - ==> Iteration [ 12][ 150 /  391]: {'prec1': 87.3555, 'loss': 0.3369, 'load_time': 70.6136, 'process_time': 29.3864}
+2021-06-20 13:55:57,724 - algorithms.Algorithm - INFO   - ==> Iteration [ 12][ 200 /  391]: {'prec1': 87.4668, 'loss': 0.3342, 'load_time': 70.8781, 'process_time': 29.1219}
+2021-06-20 13:56:13,223 - algorithms.Algorithm - INFO   - ==> Iteration [ 12][ 250 /  391]: {'prec1': 87.4609, 'loss': 0.3333, 'load_time': 71.1314, 'process_time': 28.8686}
+2021-06-20 13:56:28,717 - algorithms.Algorithm - INFO   - ==> Iteration [ 12][ 300 /  391]: {'prec1': 87.5189, 'loss': 0.3327, 'load_time': 71.1764, 'process_time': 28.8236}
+2021-06-20 13:56:44,223 - algorithms.Algorithm - INFO   - ==> Iteration [ 12][ 350 /  391]: {'prec1': 87.5268, 'loss': 0.3329, 'load_time': 71.2206, 'process_time': 28.7794}
+2021-06-20 13:56:56,979 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 87.5391, 'loss': 0.3328, 'load_time': 71.2494, 'process_time': 28.7506}
+2021-06-20 13:56:57,348 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 13:56:57,349 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 13:57:03,382 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 86.5803, 'loss': 0.3538, 'load_time': 7.3178, 'process_time': 92.6822}
+2021-06-20 13:57:03,382 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 86.5803, 'loss': 0.3538, 'load_time': 7.3178, 'process_time': 92.6822}
+2021-06-20 13:57:03,382 - algorithms.Algorithm - INFO   - Training epoch [ 13 /  30]
+2021-06-20 13:57:03,383 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:57:03,383 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:57:19,121 - algorithms.Algorithm - INFO   - ==> Iteration [ 13][  50 /  391]: {'prec1': 88.7031, 'loss': 0.3027, 'load_time': 70.3022, 'process_time': 29.6978}
+2021-06-20 13:57:34,626 - algorithms.Algorithm - INFO   - ==> Iteration [ 13][ 100 /  391]: {'prec1': 88.4746, 'loss': 0.3125, 'load_time': 70.9245, 'process_time': 29.0755}
+2021-06-20 13:57:50,122 - algorithms.Algorithm - INFO   - ==> Iteration [ 13][ 150 /  391]: {'prec1': 88.4401, 'loss': 0.314, 'load_time': 71.1257, 'process_time': 28.8743}
+2021-06-20 13:58:05,613 - algorithms.Algorithm - INFO   - ==> Iteration [ 13][ 200 /  391]: {'prec1': 88.3701, 'loss': 0.3149, 'load_time': 71.2544, 'process_time': 28.7456}
+2021-06-20 13:58:21,127 - algorithms.Algorithm - INFO   - ==> Iteration [ 13][ 250 /  391]: {'prec1': 88.243, 'loss': 0.3183, 'load_time': 71.2955, 'process_time': 28.7045}
+2021-06-20 13:58:36,653 - algorithms.Algorithm - INFO   - ==> Iteration [ 13][ 300 /  391]: {'prec1': 88.2897, 'loss': 0.3156, 'load_time': 71.2963, 'process_time': 28.7037}
+2021-06-20 13:58:52,158 - algorithms.Algorithm - INFO   - ==> Iteration [ 13][ 350 /  391]: {'prec1': 88.2349, 'loss': 0.3162, 'load_time': 71.3163, 'process_time': 28.6837}
+2021-06-20 13:59:04,934 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 88.2312, 'loss': 0.3162, 'load_time': 71.3356, 'process_time': 28.6644}
+2021-06-20 13:59:05,338 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 13:59:05,339 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 13:59:11,270 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 86.1798, 'loss': 0.3762, 'load_time': 7.6195, 'process_time': 92.3805}
+2021-06-20 13:59:11,271 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 86.1798, 'loss': 0.3762, 'load_time': 7.6195, 'process_time': 92.3805}
+2021-06-20 13:59:11,271 - algorithms.Algorithm - INFO   - Training epoch [ 14 /  30]
+2021-06-20 13:59:11,271 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 13:59:11,272 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 13:59:27,063 - algorithms.Algorithm - INFO   - ==> Iteration [ 14][  50 /  391]: {'prec1': 88.6211, 'loss': 0.3028, 'load_time': 70.8681, 'process_time': 29.1319}
+2021-06-20 13:59:42,592 - algorithms.Algorithm - INFO   - ==> Iteration [ 14][ 100 /  391]: {'prec1': 88.6641, 'loss': 0.3038, 'load_time': 70.9426, 'process_time': 29.0574}
+2021-06-20 13:59:58,105 - algorithms.Algorithm - INFO   - ==> Iteration [ 14][ 150 /  391]: {'prec1': 88.6562, 'loss': 0.3068, 'load_time': 70.8887, 'process_time': 29.1113}
+2021-06-20 14:00:13,634 - algorithms.Algorithm - INFO   - ==> Iteration [ 14][ 200 /  391]: {'prec1': 88.6934, 'loss': 0.3047, 'load_time': 71.0378, 'process_time': 28.9622}
+2021-06-20 14:00:29,143 - algorithms.Algorithm - INFO   - ==> Iteration [ 14][ 250 /  391]: {'prec1': 88.6805, 'loss': 0.3046, 'load_time': 71.2757, 'process_time': 28.7243}
+2021-06-20 14:00:44,657 - algorithms.Algorithm - INFO   - ==> Iteration [ 14][ 300 /  391]: {'prec1': 88.6224, 'loss': 0.3069, 'load_time': 71.3915, 'process_time': 28.6085}
+2021-06-20 14:01:00,197 - algorithms.Algorithm - INFO   - ==> Iteration [ 14][ 350 /  391]: {'prec1': 88.6088, 'loss': 0.3065, 'load_time': 71.3557, 'process_time': 28.6443}
+2021-06-20 14:01:13,021 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 88.5947, 'loss': 0.3072, 'load_time': 71.2499, 'process_time': 28.7501}
+2021-06-20 14:01:13,469 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:01:13,470 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:01:19,479 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 86.5778, 'loss': 0.3619, 'load_time': 7.0283, 'process_time': 92.9717}
+2021-06-20 14:01:19,479 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 86.5778, 'loss': 0.3619, 'load_time': 7.0283, 'process_time': 92.9717}
+2021-06-20 14:01:19,480 - algorithms.Algorithm - INFO   - Training epoch [ 15 /  30]
+2021-06-20 14:01:19,480 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:01:19,480 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:01:35,363 - algorithms.Algorithm - INFO   - ==> Iteration [ 15][  50 /  391]: {'prec1': 89.2539, 'loss': 0.2895, 'load_time': 68.6372, 'process_time': 31.3628}
+2021-06-20 14:01:50,885 - algorithms.Algorithm - INFO   - ==> Iteration [ 15][ 100 /  391]: {'prec1': 89.3477, 'loss': 0.2873, 'load_time': 69.9343, 'process_time': 30.0657}
+2021-06-20 14:02:06,378 - algorithms.Algorithm - INFO   - ==> Iteration [ 15][ 150 /  391]: {'prec1': 89.1211, 'loss': 0.2921, 'load_time': 70.5572, 'process_time': 29.4428}
+2021-06-20 14:02:21,884 - algorithms.Algorithm - INFO   - ==> Iteration [ 15][ 200 /  391]: {'prec1': 88.9912, 'loss': 0.2963, 'load_time': 70.885, 'process_time': 29.115}
+2021-06-20 14:02:37,396 - algorithms.Algorithm - INFO   - ==> Iteration [ 15][ 250 /  391]: {'prec1': 89.0984, 'loss': 0.2938, 'load_time': 71.0909, 'process_time': 28.9091}
+2021-06-20 14:02:52,902 - algorithms.Algorithm - INFO   - ==> Iteration [ 15][ 300 /  391]: {'prec1': 89.0592, 'loss': 0.2951, 'load_time': 71.1714, 'process_time': 28.8286}
+2021-06-20 14:03:08,400 - algorithms.Algorithm - INFO   - ==> Iteration [ 15][ 350 /  391]: {'prec1': 88.9799, 'loss': 0.2967, 'load_time': 71.2776, 'process_time': 28.7224}
+2021-06-20 14:03:21,199 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 89.0033, 'loss': 0.2962, 'load_time': 71.3567, 'process_time': 28.6433}
+2021-06-20 14:03:21,536 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:03:21,537 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:03:27,258 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 83.5047, 'loss': 0.472, 'load_time': 6.3395, 'process_time': 93.6605}
+2021-06-20 14:03:27,259 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 83.5047, 'loss': 0.472, 'load_time': 6.3395, 'process_time': 93.6605}
+2021-06-20 14:03:27,259 - algorithms.Algorithm - INFO   - Training epoch [ 16 /  30]
+2021-06-20 14:03:27,259 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:03:27,259 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:03:43,001 - algorithms.Algorithm - INFO   - ==> Iteration [ 16][  50 /  391]: {'prec1': 89.3203, 'loss': 0.2876, 'load_time': 70.5817, 'process_time': 29.4183}
+2021-06-20 14:03:58,502 - algorithms.Algorithm - INFO   - ==> Iteration [ 16][ 100 /  391]: {'prec1': 89.2949, 'loss': 0.2886, 'load_time': 71.1729, 'process_time': 28.8271}
+2021-06-20 14:04:13,991 - algorithms.Algorithm - INFO   - ==> Iteration [ 16][ 150 /  391]: {'prec1': 89.194, 'loss': 0.2889, 'load_time': 71.3864, 'process_time': 28.6136}
+2021-06-20 14:04:29,486 - algorithms.Algorithm - INFO   - ==> Iteration [ 16][ 200 /  391]: {'prec1': 89.2422, 'loss': 0.2887, 'load_time': 71.5186, 'process_time': 28.4814}
+2021-06-20 14:04:44,975 - algorithms.Algorithm - INFO   - ==> Iteration [ 16][ 250 /  391]: {'prec1': 89.3383, 'loss': 0.287, 'load_time': 71.5751, 'process_time': 28.4249}
+2021-06-20 14:05:00,509 - algorithms.Algorithm - INFO   - ==> Iteration [ 16][ 300 /  391]: {'prec1': 89.3535, 'loss': 0.2867, 'load_time': 71.3733, 'process_time': 28.6267}
+2021-06-20 14:05:16,010 - algorithms.Algorithm - INFO   - ==> Iteration [ 16][ 350 /  391]: {'prec1': 89.3538, 'loss': 0.2876, 'load_time': 71.4047, 'process_time': 28.5953}
+2021-06-20 14:05:28,787 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 89.3377, 'loss': 0.2886, 'load_time': 71.5079, 'process_time': 28.4921}
+2021-06-20 14:05:29,102 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:05:29,103 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:05:34,866 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 85.9548, 'loss': 0.3729, 'load_time': 7.0651, 'process_time': 92.9349}
+2021-06-20 14:05:34,866 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 85.9548, 'loss': 0.3729, 'load_time': 7.0651, 'process_time': 92.9349}
+2021-06-20 14:05:34,866 - algorithms.Algorithm - INFO   - Training epoch [ 17 /  30]
+2021-06-20 14:05:34,867 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:05:34,867 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:05:50,525 - algorithms.Algorithm - INFO   - ==> Iteration [ 17][  50 /  391]: {'prec1': 90.0547, 'loss': 0.274, 'load_time': 70.2087, 'process_time': 29.7913}
+2021-06-20 14:06:06,020 - algorithms.Algorithm - INFO   - ==> Iteration [ 17][ 100 /  391]: {'prec1': 89.957, 'loss': 0.2719, 'load_time': 71.1759, 'process_time': 28.8241}
+2021-06-20 14:06:21,526 - algorithms.Algorithm - INFO   - ==> Iteration [ 17][ 150 /  391]: {'prec1': 89.8711, 'loss': 0.2744, 'load_time': 71.2663, 'process_time': 28.7337}
+2021-06-20 14:06:37,068 - algorithms.Algorithm - INFO   - ==> Iteration [ 17][ 200 /  391]: {'prec1': 89.5752, 'loss': 0.2808, 'load_time': 71.0123, 'process_time': 28.9877}
+2021-06-20 14:06:52,582 - algorithms.Algorithm - INFO   - ==> Iteration [ 17][ 250 /  391]: {'prec1': 89.5852, 'loss': 0.2814, 'load_time': 71.0661, 'process_time': 28.9339}
+2021-06-20 14:07:08,074 - algorithms.Algorithm - INFO   - ==> Iteration [ 17][ 300 /  391]: {'prec1': 89.5677, 'loss': 0.2833, 'load_time': 71.3201, 'process_time': 28.6799}
+2021-06-20 14:07:23,570 - algorithms.Algorithm - INFO   - ==> Iteration [ 17][ 350 /  391]: {'prec1': 89.5552, 'loss': 0.283, 'load_time': 71.4335, 'process_time': 28.5665}
+2021-06-20 14:07:36,438 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 89.5622, 'loss': 0.2825, 'load_time': 71.3984, 'process_time': 28.6016}
+2021-06-20 14:07:36,849 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:07:36,850 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:07:43,214 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 82.9608, 'loss': 0.4756, 'load_time': 7.5644, 'process_time': 92.4356}
+2021-06-20 14:07:43,215 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 82.9608, 'loss': 0.4756, 'load_time': 7.5644, 'process_time': 92.4356}
+2021-06-20 14:07:43,215 - algorithms.Algorithm - INFO   - Training epoch [ 18 /  30]
+2021-06-20 14:07:43,216 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:07:43,216 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:07:59,086 - algorithms.Algorithm - INFO   - ==> Iteration [ 18][  50 /  391]: {'prec1': 90.3555, 'loss': 0.2648, 'load_time': 68.264, 'process_time': 31.736}
+2021-06-20 14:08:14,650 - algorithms.Algorithm - INFO   - ==> Iteration [ 18][ 100 /  391]: {'prec1': 90.1172, 'loss': 0.2714, 'load_time': 68.8865, 'process_time': 31.1135}
+2021-06-20 14:08:30,207 - algorithms.Algorithm - INFO   - ==> Iteration [ 18][ 150 /  391]: {'prec1': 90.0781, 'loss': 0.271, 'load_time': 69.0129, 'process_time': 30.9871}
+2021-06-20 14:08:45,728 - algorithms.Algorithm - INFO   - ==> Iteration [ 18][ 200 /  391]: {'prec1': 90.0957, 'loss': 0.2709, 'load_time': 69.5387, 'process_time': 30.4613}
+2021-06-20 14:09:01,263 - algorithms.Algorithm - INFO   - ==> Iteration [ 18][ 250 /  391]: {'prec1': 90.0812, 'loss': 0.2711, 'load_time': 69.9324, 'process_time': 30.0676}
+2021-06-20 14:09:16,815 - algorithms.Algorithm - INFO   - ==> Iteration [ 18][ 300 /  391]: {'prec1': 90.0475, 'loss': 0.2724, 'load_time': 70.0772, 'process_time': 29.9228}
+2021-06-20 14:09:32,362 - algorithms.Algorithm - INFO   - ==> Iteration [ 18][ 350 /  391]: {'prec1': 89.9425, 'loss': 0.2747, 'load_time': 70.2013, 'process_time': 29.7987}
+2021-06-20 14:09:45,156 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 89.9177, 'loss': 0.2752, 'load_time': 70.2981, 'process_time': 29.7019}
+2021-06-20 14:09:45,625 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:09:45,627 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:09:51,653 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 85.846, 'loss': 0.3768, 'load_time': 7.7246, 'process_time': 92.2754}
+2021-06-20 14:09:51,654 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 85.846, 'loss': 0.3768, 'load_time': 7.7246, 'process_time': 92.2754}
+2021-06-20 14:09:51,654 - algorithms.Algorithm - INFO   - Training epoch [ 19 /  30]
+2021-06-20 14:09:51,654 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:09:51,654 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:10:07,474 - algorithms.Algorithm - INFO   - ==> Iteration [ 19][  50 /  391]: {'prec1': 90.4414, 'loss': 0.2647, 'load_time': 70.2121, 'process_time': 29.7879}
+2021-06-20 14:10:22,967 - algorithms.Algorithm - INFO   - ==> Iteration [ 19][ 100 /  391]: {'prec1': 90.4336, 'loss': 0.2627, 'load_time': 71.0516, 'process_time': 28.9484}
+2021-06-20 14:10:38,498 - algorithms.Algorithm - INFO   - ==> Iteration [ 19][ 150 /  391]: {'prec1': 90.4362, 'loss': 0.2629, 'load_time': 71.1078, 'process_time': 28.8922}
+2021-06-20 14:10:54,008 - algorithms.Algorithm - INFO   - ==> Iteration [ 19][ 200 /  391]: {'prec1': 90.2305, 'loss': 0.2683, 'load_time': 71.3409, 'process_time': 28.6591}
+2021-06-20 14:11:09,540 - algorithms.Algorithm - INFO   - ==> Iteration [ 19][ 250 /  391]: {'prec1': 90.2414, 'loss': 0.2678, 'load_time': 71.2198, 'process_time': 28.7802}
+2021-06-20 14:11:25,047 - algorithms.Algorithm - INFO   - ==> Iteration [ 19][ 300 /  391]: {'prec1': 90.0671, 'loss': 0.2715, 'load_time': 71.426, 'process_time': 28.574}
+2021-06-20 14:11:40,567 - algorithms.Algorithm - INFO   - ==> Iteration [ 19][ 350 /  391]: {'prec1': 90.0218, 'loss': 0.2717, 'load_time': 71.48, 'process_time': 28.52}
+2021-06-20 14:11:53,346 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 90.0681, 'loss': 0.2707, 'load_time': 71.4635, 'process_time': 28.5365}
+2021-06-20 14:11:53,711 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:11:53,713 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:11:59,567 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 87.7497, 'loss': 0.3317, 'load_time': 6.7359, 'process_time': 93.2641}
+2021-06-20 14:11:59,568 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 87.7497, 'loss': 0.3317, 'load_time': 6.7359, 'process_time': 93.2641}
+2021-06-20 14:11:59,568 - algorithms.Algorithm - INFO   - Training epoch [ 20 /  30]
+2021-06-20 14:11:59,568 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:11:59,569 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:12:15,251 - algorithms.Algorithm - INFO   - ==> Iteration [ 20][  50 /  391]: {'prec1': 90.582, 'loss': 0.2584, 'load_time': 70.0436, 'process_time': 29.9564}
+2021-06-20 14:12:30,746 - algorithms.Algorithm - INFO   - ==> Iteration [ 20][ 100 /  391]: {'prec1': 90.4629, 'loss': 0.2593, 'load_time': 71.0145, 'process_time': 28.9855}
+2021-06-20 14:12:46,260 - algorithms.Algorithm - INFO   - ==> Iteration [ 20][ 150 /  391]: {'prec1': 90.4362, 'loss': 0.2611, 'load_time': 71.1422, 'process_time': 28.8578}
+2021-06-20 14:13:01,754 - algorithms.Algorithm - INFO   - ==> Iteration [ 20][ 200 /  391]: {'prec1': 90.3662, 'loss': 0.2634, 'load_time': 71.3709, 'process_time': 28.6291}
+2021-06-20 14:13:17,242 - algorithms.Algorithm - INFO   - ==> Iteration [ 20][ 250 /  391]: {'prec1': 90.3133, 'loss': 0.2638, 'load_time': 71.5458, 'process_time': 28.4542}
+2021-06-20 14:13:32,754 - algorithms.Algorithm - INFO   - ==> Iteration [ 20][ 300 /  391]: {'prec1': 90.1927, 'loss': 0.2665, 'load_time': 71.5142, 'process_time': 28.4858}
+2021-06-20 14:13:48,247 - algorithms.Algorithm - INFO   - ==> Iteration [ 20][ 350 /  391]: {'prec1': 90.2054, 'loss': 0.2658, 'load_time': 71.5333, 'process_time': 28.4667}
+2021-06-20 14:14:01,008 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 90.1677, 'loss': 0.2674, 'load_time': 71.5124, 'process_time': 28.4876}
+2021-06-20 14:14:01,419 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:14:01,420 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:14:07,198 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 87.7794, 'loss': 0.3274, 'load_time': 7.0676, 'process_time': 92.9324}
+2021-06-20 14:14:07,199 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 87.7794, 'loss': 0.3274, 'load_time': 7.0676, 'process_time': 92.9324}
+2021-06-20 14:14:07,199 - algorithms.Algorithm - INFO   - Training epoch [ 21 /  30]
+2021-06-20 14:14:07,199 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:14:07,199 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:14:22,993 - algorithms.Algorithm - INFO   - ==> Iteration [ 21][  50 /  391]: {'prec1': 90.5156, 'loss': 0.2542, 'load_time': 70.8245, 'process_time': 29.1755}
+2021-06-20 14:14:38,487 - algorithms.Algorithm - INFO   - ==> Iteration [ 21][ 100 /  391]: {'prec1': 90.7578, 'loss': 0.2511, 'load_time': 71.3522, 'process_time': 28.6478}
+2021-06-20 14:14:53,985 - algorithms.Algorithm - INFO   - ==> Iteration [ 21][ 150 /  391]: {'prec1': 90.7044, 'loss': 0.2534, 'load_time': 71.5852, 'process_time': 28.4148}
+2021-06-20 14:15:09,481 - algorithms.Algorithm - INFO   - ==> Iteration [ 21][ 200 /  391]: {'prec1': 90.5723, 'loss': 0.2554, 'load_time': 71.7503, 'process_time': 28.2497}
+2021-06-20 14:15:24,998 - algorithms.Algorithm - INFO   - ==> Iteration [ 21][ 250 /  391]: {'prec1': 90.5312, 'loss': 0.2563, 'load_time': 71.7092, 'process_time': 28.2908}
+2021-06-20 14:15:40,509 - algorithms.Algorithm - INFO   - ==> Iteration [ 21][ 300 /  391]: {'prec1': 90.4043, 'loss': 0.2589, 'load_time': 71.6125, 'process_time': 28.3875}
+2021-06-20 14:15:56,001 - algorithms.Algorithm - INFO   - ==> Iteration [ 21][ 350 /  391]: {'prec1': 90.3465, 'loss': 0.2606, 'load_time': 71.666, 'process_time': 28.334}
+2021-06-20 14:16:08,749 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 90.3329, 'loss': 0.2617, 'load_time': 71.782, 'process_time': 28.218}
+2021-06-20 14:16:09,099 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:16:09,101 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:16:14,937 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 86.0735, 'loss': 0.3796, 'load_time': 7.4416, 'process_time': 92.5584}
+2021-06-20 14:16:14,937 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 86.0735, 'loss': 0.3796, 'load_time': 7.4416, 'process_time': 92.5584}
+2021-06-20 14:16:14,938 - algorithms.Algorithm - INFO   - Training epoch [ 22 /  30]
+2021-06-20 14:16:14,938 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:16:14,938 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:16:30,639 - algorithms.Algorithm - INFO   - ==> Iteration [ 22][  50 /  391]: {'prec1': 91.2227, 'loss': 0.2463, 'load_time': 70.8349, 'process_time': 29.1651}
+2021-06-20 14:16:46,136 - algorithms.Algorithm - INFO   - ==> Iteration [ 22][ 100 /  391]: {'prec1': 90.9277, 'loss': 0.2503, 'load_time': 71.4981, 'process_time': 28.5019}
+2021-06-20 14:17:01,619 - algorithms.Algorithm - INFO   - ==> Iteration [ 22][ 150 /  391]: {'prec1': 90.7044, 'loss': 0.2538, 'load_time': 71.8143, 'process_time': 28.1857}
+2021-06-20 14:17:17,128 - algorithms.Algorithm - INFO   - ==> Iteration [ 22][ 200 /  391]: {'prec1': 90.627, 'loss': 0.2571, 'load_time': 71.877, 'process_time': 28.123}
+2021-06-20 14:17:32,604 - algorithms.Algorithm - INFO   - ==> Iteration [ 22][ 250 /  391]: {'prec1': 90.6781, 'loss': 0.256, 'load_time': 71.8922, 'process_time': 28.1078}
+2021-06-20 14:17:48,100 - algorithms.Algorithm - INFO   - ==> Iteration [ 22][ 300 /  391]: {'prec1': 90.638, 'loss': 0.2567, 'load_time': 71.901, 'process_time': 28.099}
+2021-06-20 14:18:03,586 - algorithms.Algorithm - INFO   - ==> Iteration [ 22][ 350 /  391]: {'prec1': 90.5737, 'loss': 0.2583, 'load_time': 71.9081, 'process_time': 28.0919}
+2021-06-20 14:18:16,421 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 90.545, 'loss': 0.2588, 'load_time': 71.9648, 'process_time': 28.0352}
+2021-06-20 14:18:16,722 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:18:16,724 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:18:22,659 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 86.6372, 'loss': 0.3695, 'load_time': 8.1622, 'process_time': 91.8378}
+2021-06-20 14:18:22,660 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 86.6372, 'loss': 0.3695, 'load_time': 8.1622, 'process_time': 91.8378}
+2021-06-20 14:18:22,660 - algorithms.Algorithm - INFO   - Training epoch [ 23 /  30]
+2021-06-20 14:18:22,660 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:18:22,660 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:18:38,438 - algorithms.Algorithm - INFO   - ==> Iteration [ 23][  50 /  391]: {'prec1': 90.9492, 'loss': 0.2512, 'load_time': 70.7479, 'process_time': 29.2521}
+2021-06-20 14:18:53,944 - algorithms.Algorithm - INFO   - ==> Iteration [ 23][ 100 /  391]: {'prec1': 90.8457, 'loss': 0.2523, 'load_time': 71.1623, 'process_time': 28.8377}
+2021-06-20 14:19:09,450 - algorithms.Algorithm - INFO   - ==> Iteration [ 23][ 150 /  391]: {'prec1': 90.7786, 'loss': 0.2536, 'load_time': 71.2952, 'process_time': 28.7048}
+2021-06-20 14:19:24,968 - algorithms.Algorithm - INFO   - ==> Iteration [ 23][ 200 /  391]: {'prec1': 90.7744, 'loss': 0.2534, 'load_time': 71.3297, 'process_time': 28.6703}
+2021-06-20 14:19:40,466 - algorithms.Algorithm - INFO   - ==> Iteration [ 23][ 250 /  391]: {'prec1': 90.8109, 'loss': 0.2522, 'load_time': 71.4458, 'process_time': 28.5542}
+2021-06-20 14:19:55,969 - algorithms.Algorithm - INFO   - ==> Iteration [ 23][ 300 /  391]: {'prec1': 90.7181, 'loss': 0.2541, 'load_time': 71.5811, 'process_time': 28.4189}
+2021-06-20 14:20:11,461 - algorithms.Algorithm - INFO   - ==> Iteration [ 23][ 350 /  391]: {'prec1': 90.6546, 'loss': 0.2552, 'load_time': 71.683, 'process_time': 28.317}
+2021-06-20 14:20:24,318 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 90.627, 'loss': 0.2562, 'load_time': 71.6386, 'process_time': 28.3614}
+2021-06-20 14:20:24,655 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:20:24,656 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:20:30,494 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 87.2379, 'loss': 0.3443, 'load_time': 7.2726, 'process_time': 92.7274}
+2021-06-20 14:20:30,495 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 87.2379, 'loss': 0.3443, 'load_time': 7.2726, 'process_time': 92.7274}
+2021-06-20 14:20:30,495 - algorithms.Algorithm - INFO   - Training epoch [ 24 /  30]
+2021-06-20 14:20:30,495 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:20:30,495 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:20:46,243 - algorithms.Algorithm - INFO   - ==> Iteration [ 24][  50 /  391]: {'prec1': 91.5742, 'loss': 0.2294, 'load_time': 69.8914, 'process_time': 30.1086}
+2021-06-20 14:21:01,737 - algorithms.Algorithm - INFO   - ==> Iteration [ 24][ 100 /  391]: {'prec1': 91.3691, 'loss': 0.2361, 'load_time': 70.7107, 'process_time': 29.2893}
+2021-06-20 14:21:17,233 - algorithms.Algorithm - INFO   - ==> Iteration [ 24][ 150 /  391]: {'prec1': 91.1888, 'loss': 0.2393, 'load_time': 70.8785, 'process_time': 29.1215}
+2021-06-20 14:21:32,729 - algorithms.Algorithm - INFO   - ==> Iteration [ 24][ 200 /  391]: {'prec1': 91.1084, 'loss': 0.2417, 'load_time': 71.0309, 'process_time': 28.9691}
+2021-06-20 14:21:48,231 - algorithms.Algorithm - INFO   - ==> Iteration [ 24][ 250 /  391]: {'prec1': 90.9898, 'loss': 0.2446, 'load_time': 71.0537, 'process_time': 28.9463}
+2021-06-20 14:22:03,741 - algorithms.Algorithm - INFO   - ==> Iteration [ 24][ 300 /  391]: {'prec1': 90.8496, 'loss': 0.2479, 'load_time': 71.1896, 'process_time': 28.8104}
+2021-06-20 14:22:19,248 - algorithms.Algorithm - INFO   - ==> Iteration [ 24][ 350 /  391]: {'prec1': 90.8421, 'loss': 0.2487, 'load_time': 71.2195, 'process_time': 28.7805}
+2021-06-20 14:22:31,992 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 90.7468, 'loss': 0.2512, 'load_time': 71.2714, 'process_time': 28.7286}
+2021-06-20 14:22:32,375 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:22:32,376 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:22:38,158 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 87.8016, 'loss': 0.332, 'load_time': 6.6366, 'process_time': 93.3634}
+2021-06-20 14:22:38,159 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 87.8016, 'loss': 0.332, 'load_time': 6.6366, 'process_time': 93.3634}
+2021-06-20 14:22:38,159 - algorithms.Algorithm - INFO   - Training epoch [ 25 /  30]
+2021-06-20 14:22:38,160 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:22:38,160 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:22:53,893 - algorithms.Algorithm - INFO   - ==> Iteration [ 25][  50 /  391]: {'prec1': 91.9531, 'loss': 0.222, 'load_time': 70.1448, 'process_time': 29.8552}
+2021-06-20 14:23:09,394 - algorithms.Algorithm - INFO   - ==> Iteration [ 25][ 100 /  391]: {'prec1': 91.6816, 'loss': 0.2294, 'load_time': 70.9512, 'process_time': 29.0488}
+2021-06-20 14:23:24,895 - algorithms.Algorithm - INFO   - ==> Iteration [ 25][ 150 /  391]: {'prec1': 91.3698, 'loss': 0.2364, 'load_time': 71.0998, 'process_time': 28.9002}
+2021-06-20 14:23:40,397 - algorithms.Algorithm - INFO   - ==> Iteration [ 25][ 200 /  391]: {'prec1': 91.3457, 'loss': 0.2378, 'load_time': 71.1693, 'process_time': 28.8307}
+2021-06-20 14:23:55,877 - algorithms.Algorithm - INFO   - ==> Iteration [ 25][ 250 /  391]: {'prec1': 91.2297, 'loss': 0.2413, 'load_time': 71.3741, 'process_time': 28.6259}
+2021-06-20 14:24:11,393 - algorithms.Algorithm - INFO   - ==> Iteration [ 25][ 300 /  391]: {'prec1': 91.1491, 'loss': 0.2433, 'load_time': 71.3412, 'process_time': 28.6588}
+2021-06-20 14:24:26,916 - algorithms.Algorithm - INFO   - ==> Iteration [ 25][ 350 /  391]: {'prec1': 91.0843, 'loss': 0.2448, 'load_time': 71.3135, 'process_time': 28.6865}
+2021-06-20 14:24:39,695 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 91.0028, 'loss': 0.2475, 'load_time': 71.2406, 'process_time': 28.7594}
+2021-06-20 14:24:40,158 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:24:40,160 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:24:46,048 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 85.0969, 'loss': 0.3944, 'load_time': 6.5844, 'process_time': 93.4156}
+2021-06-20 14:24:46,049 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 85.0969, 'loss': 0.3944, 'load_time': 6.5844, 'process_time': 93.4156}
+2021-06-20 14:24:46,049 - algorithms.Algorithm - INFO   - Training epoch [ 26 /  30]
+2021-06-20 14:24:46,049 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:24:46,050 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:25:01,737 - algorithms.Algorithm - INFO   - ==> Iteration [ 26][  50 /  391]: {'prec1': 91.4219, 'loss': 0.2362, 'load_time': 70.1942, 'process_time': 29.8058}
+2021-06-20 14:25:17,234 - algorithms.Algorithm - INFO   - ==> Iteration [ 26][ 100 /  391]: {'prec1': 91.4258, 'loss': 0.2372, 'load_time': 70.8547, 'process_time': 29.1453}
+2021-06-20 14:25:32,738 - algorithms.Algorithm - INFO   - ==> Iteration [ 26][ 150 /  391]: {'prec1': 91.3138, 'loss': 0.2396, 'load_time': 71.2151, 'process_time': 28.7849}
+2021-06-20 14:25:48,239 - algorithms.Algorithm - INFO   - ==> Iteration [ 26][ 200 /  391]: {'prec1': 91.1533, 'loss': 0.2422, 'load_time': 71.464, 'process_time': 28.536}
+2021-06-20 14:26:03,746 - algorithms.Algorithm - INFO   - ==> Iteration [ 26][ 250 /  391]: {'prec1': 91.0945, 'loss': 0.2423, 'load_time': 71.5875, 'process_time': 28.4125}
+2021-06-20 14:26:19,256 - algorithms.Algorithm - INFO   - ==> Iteration [ 26][ 300 /  391]: {'prec1': 91.0169, 'loss': 0.2437, 'load_time': 71.6003, 'process_time': 28.3997}
+2021-06-20 14:26:34,763 - algorithms.Algorithm - INFO   - ==> Iteration [ 26][ 350 /  391]: {'prec1': 90.9252, 'loss': 0.246, 'load_time': 71.5591, 'process_time': 28.4409}
+2021-06-20 14:26:47,552 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 90.8795, 'loss': 0.2474, 'load_time': 71.5508, 'process_time': 28.4492}
+2021-06-20 14:26:47,885 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:26:47,886 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:26:53,740 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 86.3034, 'loss': 0.3914, 'load_time': 6.3837, 'process_time': 93.6163}
+2021-06-20 14:26:53,741 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 86.3034, 'loss': 0.3914, 'load_time': 6.3837, 'process_time': 93.6163}
+2021-06-20 14:26:53,741 - algorithms.Algorithm - INFO   - Training epoch [ 27 /  30]
+2021-06-20 14:26:53,741 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:26:53,742 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:27:09,434 - algorithms.Algorithm - INFO   - ==> Iteration [ 27][  50 /  391]: {'prec1': 91.2656, 'loss': 0.2344, 'load_time': 70.1241, 'process_time': 29.8759}
+2021-06-20 14:27:24,981 - algorithms.Algorithm - INFO   - ==> Iteration [ 27][ 100 /  391]: {'prec1': 91.2949, 'loss': 0.2335, 'load_time': 70.2984, 'process_time': 29.7016}
+2021-06-20 14:27:40,533 - algorithms.Algorithm - INFO   - ==> Iteration [ 27][ 150 /  391]: {'prec1': 91.0599, 'loss': 0.2398, 'load_time': 70.2397, 'process_time': 29.7603}
+2021-06-20 14:27:56,078 - algorithms.Algorithm - INFO   - ==> Iteration [ 27][ 200 /  391]: {'prec1': 91.082, 'loss': 0.2401, 'load_time': 70.2707, 'process_time': 29.7293}
+2021-06-20 14:28:11,616 - algorithms.Algorithm - INFO   - ==> Iteration [ 27][ 250 /  391]: {'prec1': 90.9594, 'loss': 0.2418, 'load_time': 70.3779, 'process_time': 29.6221}
+2021-06-20 14:28:27,131 - algorithms.Algorithm - INFO   - ==> Iteration [ 27][ 300 /  391]: {'prec1': 90.9499, 'loss': 0.2429, 'load_time': 70.4724, 'process_time': 29.5276}
+2021-06-20 14:28:42,654 - algorithms.Algorithm - INFO   - ==> Iteration [ 27][ 350 /  391]: {'prec1': 91.0173, 'loss': 0.2424, 'load_time': 70.6473, 'process_time': 29.3527}
+2021-06-20 14:28:55,440 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 90.9686, 'loss': 0.2438, 'load_time': 70.6431, 'process_time': 29.3569}
+2021-06-20 14:28:55,861 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:28:55,863 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:29:01,729 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 88.8993, 'loss': 0.3052, 'load_time': 7.1954, 'process_time': 92.8046}
+2021-06-20 14:29:01,729 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 88.8993, 'loss': 0.3052, 'load_time': 7.1954, 'process_time': 92.8046}
+2021-06-20 14:29:01,729 - algorithms.Algorithm - INFO   - Training epoch [ 28 /  30]
+2021-06-20 14:29:01,730 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:29:01,730 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:29:17,453 - algorithms.Algorithm - INFO   - ==> Iteration [ 28][  50 /  391]: {'prec1': 91.4141, 'loss': 0.2354, 'load_time': 69.8617, 'process_time': 30.1383}
+2021-06-20 14:29:32,992 - algorithms.Algorithm - INFO   - ==> Iteration [ 28][ 100 /  391]: {'prec1': 91.25, 'loss': 0.2373, 'load_time': 70.338, 'process_time': 29.662}
+2021-06-20 14:29:48,492 - algorithms.Algorithm - INFO   - ==> Iteration [ 28][ 150 /  391]: {'prec1': 91.1979, 'loss': 0.2395, 'load_time': 70.7521, 'process_time': 29.2479}
+2021-06-20 14:30:04,022 - algorithms.Algorithm - INFO   - ==> Iteration [ 28][ 200 /  391]: {'prec1': 91.1934, 'loss': 0.2397, 'load_time': 70.7496, 'process_time': 29.2504}
+2021-06-20 14:30:19,544 - algorithms.Algorithm - INFO   - ==> Iteration [ 28][ 250 /  391]: {'prec1': 91.1875, 'loss': 0.2404, 'load_time': 70.8346, 'process_time': 29.1654}
+2021-06-20 14:30:35,095 - algorithms.Algorithm - INFO   - ==> Iteration [ 28][ 300 /  391]: {'prec1': 91.2396, 'loss': 0.2394, 'load_time': 70.7652, 'process_time': 29.2348}
+2021-06-20 14:30:50,602 - algorithms.Algorithm - INFO   - ==> Iteration [ 28][ 350 /  391]: {'prec1': 91.1641, 'loss': 0.242, 'load_time': 70.8845, 'process_time': 29.1155}
+2021-06-20 14:31:03,357 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 91.0877, 'loss': 0.2432, 'load_time': 71.0313, 'process_time': 28.9687}
+2021-06-20 14:31:03,718 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:31:03,719 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:31:09,606 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 88.6867, 'loss': 0.3128, 'load_time': 6.7683, 'process_time': 93.2317}
+2021-06-20 14:31:09,607 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 88.6867, 'loss': 0.3128, 'load_time': 6.7683, 'process_time': 93.2317}
+2021-06-20 14:31:09,607 - algorithms.Algorithm - INFO   - Training epoch [ 29 /  30]
+2021-06-20 14:31:09,607 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:31:09,607 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:31:25,296 - algorithms.Algorithm - INFO   - ==> Iteration [ 29][  50 /  391]: {'prec1': 91.8359, 'loss': 0.2249, 'load_time': 70.892, 'process_time': 29.108}
+2021-06-20 14:31:40,785 - algorithms.Algorithm - INFO   - ==> Iteration [ 29][ 100 /  391]: {'prec1': 91.4355, 'loss': 0.2342, 'load_time': 71.7691, 'process_time': 28.2309}
+2021-06-20 14:31:56,279 - algorithms.Algorithm - INFO   - ==> Iteration [ 29][ 150 /  391]: {'prec1': 91.4792, 'loss': 0.2336, 'load_time': 71.9807, 'process_time': 28.0193}
+2021-06-20 14:32:11,775 - algorithms.Algorithm - INFO   - ==> Iteration [ 29][ 200 /  391]: {'prec1': 91.3242, 'loss': 0.2369, 'load_time': 72.0879, 'process_time': 27.9121}
+2021-06-20 14:32:27,278 - algorithms.Algorithm - INFO   - ==> Iteration [ 29][ 250 /  391]: {'prec1': 91.3172, 'loss': 0.238, 'load_time': 72.0428, 'process_time': 27.9572}
+2021-06-20 14:32:42,804 - algorithms.Algorithm - INFO   - ==> Iteration [ 29][ 300 /  391]: {'prec1': 91.2767, 'loss': 0.2387, 'load_time': 71.8299, 'process_time': 28.1701}
+2021-06-20 14:32:58,338 - algorithms.Algorithm - INFO   - ==> Iteration [ 29][ 350 /  391]: {'prec1': 91.2578, 'loss': 0.2397, 'load_time': 71.5517, 'process_time': 28.4483}
+2021-06-20 14:33:11,135 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 91.1803, 'loss': 0.2416, 'load_time': 71.5251, 'process_time': 28.4749}
+2021-06-20 14:33:11,480 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:33:11,481 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:33:17,259 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 86.6767, 'loss': 0.3718, 'load_time': 6.4721, 'process_time': 93.5279}
+2021-06-20 14:33:17,260 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 86.6767, 'loss': 0.3718, 'load_time': 6.4721, 'process_time': 93.5279}
+2021-06-20 14:33:17,260 - algorithms.Algorithm - INFO   - Training epoch [ 30 /  30]
+2021-06-20 14:33:17,260 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-20 14:33:17,261 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-20 14:33:32,946 - algorithms.Algorithm - INFO   - ==> Iteration [ 30][  50 /  391]: {'prec1': 91.5508, 'loss': 0.2342, 'load_time': 70.3925, 'process_time': 29.6075}
+2021-06-20 14:33:48,479 - algorithms.Algorithm - INFO   - ==> Iteration [ 30][ 100 /  391]: {'prec1': 91.457, 'loss': 0.2358, 'load_time': 70.3314, 'process_time': 29.6686}
+2021-06-20 14:34:03,981 - algorithms.Algorithm - INFO   - ==> Iteration [ 30][ 150 /  391]: {'prec1': 91.3451, 'loss': 0.2381, 'load_time': 70.6027, 'process_time': 29.3973}
+2021-06-20 14:34:19,470 - algorithms.Algorithm - INFO   - ==> Iteration [ 30][ 200 /  391]: {'prec1': 91.3555, 'loss': 0.2375, 'load_time': 70.8613, 'process_time': 29.1387}
+2021-06-20 14:34:34,955 - algorithms.Algorithm - INFO   - ==> Iteration [ 30][ 250 /  391]: {'prec1': 91.318, 'loss': 0.2386, 'load_time': 70.9785, 'process_time': 29.0215}
+2021-06-20 14:34:50,439 - algorithms.Algorithm - INFO   - ==> Iteration [ 30][ 300 /  391]: {'prec1': 91.2689, 'loss': 0.2398, 'load_time': 71.1701, 'process_time': 28.8299}
+2021-06-20 14:35:05,930 - algorithms.Algorithm - INFO   - ==> Iteration [ 30][ 350 /  391]: {'prec1': 91.2372, 'loss': 0.2401, 'load_time': 71.2081, 'process_time': 28.7919}
+2021-06-20 14:35:18,706 - algorithms.Algorithm - INFO   - ==> Training stats: {'prec1': 91.2902, 'loss': 0.2385, 'load_time': 71.2507, 'process_time': 28.7493}
+2021-06-20 14:35:19,031 - algorithms.Algorithm - INFO   - Evaluating: CIFAR10_RotNet_ResNet18
+2021-06-20 14:35:19,033 - algorithms.Algorithm - INFO   - ==> Dataset: cifar10_test [79 images]
+2021-06-20 14:35:24,794 - algorithms.Algorithm - INFO   - ==> Results: {'prec1': 87.6063, 'loss': 0.3552, 'load_time': 6.5228, 'process_time': 93.4772}
+2021-06-20 14:35:24,795 - algorithms.Algorithm - INFO   - ==> Evaluation stats: {'prec1': 87.6063, 'loss': 0.3552, 'load_time': 6.5228, 'process_time': 93.4772}

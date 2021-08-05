@@ -1,0 +1,12 @@
+2021-06-03 21:51:54,595 - algorithms.Algorithm - INFO   - Algorithm options {'data_train_opt': {'batch_size': 128, 'unsupervised': True, 'epoch_size': None, 'random_sized_crop': False, 'dataset_name': 'cifar10', 'split': 'train'}, 'data_test_opt': {'batch_size': 128, 'unsupervised': True, 'epoch_size': None, 'random_sized_crop': False, 'dataset_name': 'cifar10', 'split': 'test'}, 'max_num_epochs': 20, 'networks': {'model': {'def_file': 'architectures/ResNet.py', 'pretrained': None, 'opt': {'num_classes': 4, 'num_blocks': [2, 2, 2, 2]}, 'optim_params': {'optim_type': 'sgd', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0.0005, 'nesterov': True, 'LUT_lr': [(60, 0.1), (120, 0.02), (160, 0.004), (200, 0.0008)]}}}, 'criterions': {'loss': {'ctype': 'CrossEntropyLoss', 'opt': None}}, 'algorithm_type': 'ClassificationModel', 'exp_dir': './experiments/CIFAR10_RotNet_ResNet18', 'disp_step': 50}
+2021-06-03 21:51:54,596 - algorithms.Algorithm - INFO   - Set network model
+2021-06-03 21:51:54,596 - algorithms.Algorithm - INFO   - ==> Initiliaze network model from file architectures/ResNet.py with opts: {'num_classes': 4, 'num_blocks': [2, 2, 2, 2]}
+2021-06-03 21:51:55,520 - algorithms.Algorithm - INFO   - Initialize criterion[loss]: CrossEntropyLoss with options: None
+2021-06-03 21:52:06,249 - algorithms.Algorithm - INFO   - Initialize optimizer: sgd with params: {'optim_type': 'sgd', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0.0005, 'nesterov': True, 'LUT_lr': [(60, 0.1), (120, 0.02), (160, 0.004), (200, 0.0008)]} for netwotk: model
+2021-06-03 21:52:06,250 - algorithms.Algorithm - INFO   - Training epoch [  1 /  20]
+2021-06-03 21:52:06,251 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-03 21:52:06,251 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-03 21:52:33,676 - algorithms.Algorithm - INFO   - ==> Iteration [  1][  50 /  391]: {'prec1': 27.2461, 'loss': 2.4127, 'load_time': 77.598, 'process_time': 22.402}
+2021-06-03 21:53:01,789 - algorithms.Algorithm - INFO   - ==> Iteration [  1][ 100 /  391]: {'prec1': 29.3652, 'loss': 1.8769, 'load_time': 78.5295, 'process_time': 21.4705}
+2021-06-03 21:53:31,206 - algorithms.Algorithm - INFO   - ==> Iteration [  1][ 150 /  391]: {'prec1': 31.4974, 'loss': 1.683, 'load_time': 78.927, 'process_time': 21.073}
+2021-06-03 21:54:03,014 - algorithms.Algorithm - INFO   - ==> Iteration [  1][ 200 /  391]: {'prec1': 34.1104, 'loss': 1.5687, 'load_time': 79.2723, 'process_time': 20.7277}

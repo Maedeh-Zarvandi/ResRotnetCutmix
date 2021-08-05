@@ -1,0 +1,31 @@
+2021-06-01 19:31:33,982 - algorithms.Algorithm - INFO   - Algorithm options {'data_train_opt': {'batch_size': 128, 'unsupervised': True, 'epoch_size': None, 'random_sized_crop': False, 'dataset_name': 'cifar10', 'split': 'train'}, 'data_test_opt': {'batch_size': 128, 'unsupervised': True, 'epoch_size': None, 'random_sized_crop': False, 'dataset_name': 'cifar10', 'split': 'test'}, 'max_num_epochs': 100, 'networks': {'model': {'def_file': 'architectures/ResNet.py', 'pretrained': None, 'opt': {'num_classes': 4, 'num_blocks': [2, 2, 2, 2]}, 'optim_params': {'optim_type': 'sgd', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0.0005, 'nesterov': True, 'LUT_lr': [(60, 0.1), (120, 0.02), (160, 0.004), (200, 0.0008)]}}}, 'criterions': {'loss': {'ctype': 'CrossEntropyLoss', 'opt': None}}, 'algorithm_type': 'ClassificationModel', 'exp_dir': './experiments/CIFAR10_RotNet_ResNet18', 'disp_step': 50}
+2021-06-01 19:31:33,983 - algorithms.Algorithm - INFO   - Set network model
+2021-06-01 19:31:33,983 - algorithms.Algorithm - INFO   - ==> Initiliaze network model from file architectures/ResNet.py with opts: {'num_classes': 4, 'num_blocks': [2, 2, 2, 2]}
+2021-06-01 19:31:34,057 - algorithms.Algorithm - INFO   - Initialize criterion[loss]: CrossEntropyLoss with options: None
+2021-06-01 19:31:37,372 - algorithms.Algorithm - INFO   - Initialize optimizer: sgd with params: {'optim_type': 'sgd', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0.0005, 'nesterov': True, 'LUT_lr': [(60, 0.1), (120, 0.02), (160, 0.004), (200, 0.0008)]} for netwotk: model
+2021-06-01 19:31:37,372 - algorithms.Algorithm - INFO   - Training epoch [  1 / 100]
+2021-06-01 19:31:37,373 - algorithms.Algorithm - INFO   - ==> Set to model optimizer lr = 0.1000000000
+2021-06-01 19:31:37,373 - algorithms.Algorithm - INFO   - Training: CIFAR10_RotNet_ResNet18
+2021-06-01 19:31:38,049 - algorithms.Algorithm - INFO   - ==> Iteration [1][1 / 391]: {'prec1': 24.0234, 'loss': 1.4308, 'load_time': 0.9063, 'process_time': 99.0937}
+2021-06-01 19:31:38,530 - algorithms.Algorithm - INFO   - ==> Iteration [1][2 / 391]: {'prec1': 24.5117, 'loss': 3.6117, 'load_time': 38.6656, 'process_time': 61.3344}
+2021-06-01 19:31:39,060 - algorithms.Algorithm - INFO   - ==> Iteration [1][3 / 391]: {'prec1': 24.6745, 'loss': 6.2388, 'load_time': 51.9635, 'process_time': 48.0365}
+2021-06-01 19:31:39,594 - algorithms.Algorithm - INFO   - ==> Iteration [1][4 / 391]: {'prec1': 25.3418, 'loss': 7.6425, 'load_time': 58.7935, 'process_time': 41.2065}
+2021-06-01 19:31:40,123 - algorithms.Algorithm - INFO   - ==> Iteration [1][5 / 391]: {'prec1': 25.2734, 'loss': 9.6762, 'load_time': 62.8195, 'process_time': 37.1805}
+2021-06-01 19:31:40,658 - algorithms.Algorithm - INFO   - ==> Iteration [1][6 / 391]: {'prec1': 25.2279, 'loss': 9.3197, 'load_time': 65.5171, 'process_time': 34.4829}
+2021-06-01 19:31:41,191 - algorithms.Algorithm - INFO   - ==> Iteration [1][7 / 391]: {'prec1': 25.0558, 'loss': 8.5845, 'load_time': 67.4511, 'process_time': 32.5489}
+2021-06-01 19:31:41,721 - algorithms.Algorithm - INFO   - ==> Iteration [1][8 / 391]: {'prec1': 25.1709, 'loss': 7.9542, 'load_time': 68.8998, 'process_time': 31.1002}
+2021-06-01 19:31:42,252 - algorithms.Algorithm - INFO   - ==> Iteration [1][9 / 391]: {'prec1': 25.3906, 'loss': 7.4109, 'load_time': 70.0061, 'process_time': 29.9939}
+2021-06-01 19:31:42,783 - algorithms.Algorithm - INFO   - ==> Iteration [1][10 / 391]: {'prec1': 25.3516, 'loss': 6.9205, 'load_time': 70.9156, 'process_time': 29.0844}
+2021-06-01 19:31:43,313 - algorithms.Algorithm - INFO   - ==> Iteration [1][11 / 391]: {'prec1': 25.4084, 'loss': 6.4849, 'load_time': 71.6489, 'process_time': 28.3511}
+2021-06-01 19:31:43,846 - algorithms.Algorithm - INFO   - ==> Iteration [1][12 / 391]: {'prec1': 25.5534, 'loss': 6.0811, 'load_time': 72.2494, 'process_time': 27.7506}
+2021-06-01 19:31:44,382 - algorithms.Algorithm - INFO   - ==> Iteration [1][13 / 391]: {'prec1': 25.616, 'loss': 5.7621, 'load_time': 72.7796, 'process_time': 27.2204}
+2021-06-01 19:31:44,915 - algorithms.Algorithm - INFO   - ==> Iteration [1][14 / 391]: {'prec1': 25.9208, 'loss': 5.4593, 'load_time': 73.2287, 'process_time': 26.7713}
+2021-06-01 19:31:45,445 - algorithms.Algorithm - INFO   - ==> Iteration [1][15 / 391]: {'prec1': 26.1589, 'loss': 5.1903, 'load_time': 73.6199, 'process_time': 26.3801}
+2021-06-01 19:31:45,979 - algorithms.Algorithm - INFO   - ==> Iteration [1][16 / 391]: {'prec1': 26.2817, 'loss': 4.9555, 'load_time': 73.9546, 'process_time': 26.0454}
+2021-06-01 19:31:46,515 - algorithms.Algorithm - INFO   - ==> Iteration [1][17 / 391]: {'prec1': 26.3442, 'loss': 4.7532, 'load_time': 74.2555, 'process_time': 25.7445}
+2021-06-01 19:31:47,047 - algorithms.Algorithm - INFO   - ==> Iteration [1][18 / 391]: {'prec1': 26.378, 'loss': 4.5696, 'load_time': 74.5226, 'process_time': 25.4774}
+2021-06-01 19:31:47,583 - algorithms.Algorithm - INFO   - ==> Iteration [1][19 / 391]: {'prec1': 26.4597, 'loss': 4.4032, 'load_time': 74.7629, 'process_time': 25.2371}
+2021-06-01 19:31:48,117 - algorithms.Algorithm - INFO   - ==> Iteration [1][20 / 391]: {'prec1': 26.4355, 'loss': 4.2565, 'load_time': 74.9758, 'process_time': 25.0242}
+2021-06-01 19:31:48,653 - algorithms.Algorithm - INFO   - ==> Iteration [1][21 / 391]: {'prec1': 26.423, 'loss': 4.121, 'load_time': 75.1793, 'process_time': 24.8207}
+2021-06-01 19:31:49,188 - algorithms.Algorithm - INFO   - ==> Iteration [1][22 / 391]: {'prec1': 26.4293, 'loss': 3.9971, 'load_time': 75.3572, 'process_time': 24.6428}
+2021-06-01 19:31:49,725 - algorithms.Algorithm - INFO   - ==> Iteration [1][23 / 391]: {'prec1': 26.52, 'loss': 3.8825, 'load_time': 75.5232, 'process_time': 24.4768}

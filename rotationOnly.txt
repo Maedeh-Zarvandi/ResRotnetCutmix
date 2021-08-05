@@ -1,0 +1,5 @@
+Launching experiment: ./config/CIFAR10_LinearClassifier_on_RotNet_ResNet18.py
+Loading experiment CIFAR10_LinearClassifier_on_RotNet_ResNet18 from file: ./config/CIFAR10_LinearClassifier_on_RotNet_ResNet18.py
+Generated logs, snapshots, and model files will be stored on ./experiments/CIFAR10_LinearClassifier_on_RotNet_ResNet18
+Files already downloaded and verified
+Files already downloaded and verified
